@@ -1,4 +1,6 @@
 import { notePages } from "@/data/notePages";
+import { bbaChapters } from "@/data/notes/semester-2/bba";
+import { calculusChapters } from "@/data/notes/semester-2/calculus";
 import { dataStructureChapters } from "@/data/notes/semester-3/data-structure";
 import { multivariableCalculusChapters } from "@/data/notes/semester-3/multivariable-calculus";
 import { coalUnits } from "@/data/notes/semester-3/coal";
@@ -409,6 +411,52 @@ print(student.introduce())`,
     topics: ["Report writing", "Presentations", "Email etiquette"],
     status: "coming-soon",
     isSample: true,
+  },
+
+  {
+    slug: "bba",
+    semester: 2,
+    name: "BBA",
+    instructors: [],
+    description:
+      "Principles of management, the functions of management, SWOT analysis, Management by Objectives, motivation, leadership styles, human resource management and market segmentation, with custom examples, diagrams, graphs and solved scenarios.",
+    totalChapters: 8,
+    topics: [
+      "Chapter 1: Principles of management (Fayol's 14 principles)",
+      "Chapter 2: Functions of management",
+      "Chapter 3: SWOT analysis",
+      "Chapter 4: Management by Objectives",
+      "Chapter 5: Motivation (Maslow's hierarchy)",
+      "Chapter 6: Leadership styles",
+      "Chapter 7: Human resource management",
+      "Chapter 8: Market segmentation",
+    ],
+    status: "available",
+    updatedAt: "2026-11-09",
+    chapters: bbaChapters,
+  },
+
+  {
+    slug: "calculus",
+    semester: 2,
+    name: "Calculus",
+    instructors: [],
+    description:
+      "Derivatives and their rules, exponential, logarithmic and trigonometric derivatives, maxima and minima, integration, methods of integration and the definite integral, with solved examples, data-based problems and graphs.",
+    totalChapters: 8,
+    topics: [
+      "Chapter 1: The derivative",
+      "Chapter 2: Rules of differentiation",
+      "Chapter 3: Exponential and logarithmic functions",
+      "Chapter 4: Trigonometric and inverse trigonometric functions",
+      "Chapter 5: Increasing and decreasing functions, maxima and minima",
+      "Chapter 6: Integration",
+      "Chapter 7: Methods of integration",
+      "Chapter 8: The definite integral",
+    ],
+    status: "available",
+    updatedAt: "2026-11-10",
+    chapters: calculusChapters,
   },
 
   // ==========================================================================

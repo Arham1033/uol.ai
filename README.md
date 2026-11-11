@@ -159,6 +159,11 @@ All six chapters are in one file, `data/notes/semester-3/entrepreneurship.js`, i
 
 All seven chapters are in one file, `data/notes/semester-3/software-engineering.js`, in textbook order: 1 Introduction, 2 Software processes, 3 Agile software development, 4 Requirements engineering, 5 System modeling, 6 Architectural design, 7 Design and implementation. The instructor is Sir Dr. Abdul Qayoom. Pictures of the models and cycles are cropped from the source PDFs and stored in `public/notes/semester-3/software-engineering/`. In the file, `IMG("name", "description", "caption")` shows one picture, `FIGS("title", ["name1", "name2"])` puts several pictures in a scrolling box, and `SCEN("title", [[scenario, answer], ...])` puts solved scenarios in a scrolling box. If you add a picture, also add its width and height to the `SIZES` list at the top of the file.
 
+### BBA, semester 2
+
+- All notes are in one file, `data/notes/semester-2/bba.js`. The eight chapters follow a teaching order: principles of management (Fayol's 14), functions of management, SWOT analysis, Management by Objectives, motivation (Maslow), leadership styles, human resource management and market segmentation. To reorder, move a name in the `bbaChapters` list at the bottom of that file.
+- The diagrams and graphs are in `public/notes/semester-2/bba/`. Examples sit in scrolling boxes (`EX(...)`) and solved scenarios in `SCEN(...)` boxes. The instructor is not added yet (`instructors: []`).
+
 ### The Islamiyat / Fehm-ul-Quran subject (semester 3)
 
 This is a big book, so it is split into units. The subject page shows one card per unit, and each unit has its own page (`/semester/3/islamiyat-fehm-ul-quran/unit-4`), so no page gets too long.
@@ -208,3 +213,8 @@ Note: GitHub rejects single files over 100 MB, and large image folders slow depl
 - In Next.js 15 and 16, `params` is a Promise, which is why the pages `await params`.
 
 Search: `HomeSearch` (homepage) and `SubjectBrowser` (semester pages) are the only interactive Client Components besides the navbar and the notes reader. They receive small summaries of the real data from the server page and filter them in the browser. Everything else renders on the server.
+
+### Calculus, semester 2
+
+`data/notes/semester-2/calculus.js` holds eight chapters in teaching order: the derivative, rules of differentiation, exponential and logarithmic derivatives, trigonometric and inverse trigonometric derivatives, maxima and minima, integration, methods of integration and the definite integral. Long example sets sit in scrolling boxes, unsolved questions are solved, and ten figures are in `public/notes/semester-2/calculus/`. The instructor name is left empty.
+
