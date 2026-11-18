@@ -1070,13 +1070,15 @@ const selectionSort = {
       code: `arr = [12, 3, 15, 70, 2, 1]
 n = len(arr)
 
-for i in range(n):
+for i in range(n - 1):
     min_value = i
 
-    for j in range(i, n):
+    for j in range(i + 1, n):
         if arr[j] < arr[min_value]:
             min_value = j
-    arr[i], arr[min_value] = arr[min_value], arr[i]
+
+    if min_value != i:
+        arr[i], arr[min_value] = arr[min_value], arr[i]
 
 print(f"Sorted array: {arr}.")
 `,
@@ -1224,7 +1226,7 @@ n = len(arr)
 for i in range(1, n):
     key = arr[i]
     j = i - 1
-    while arr[j] > key and j >= 0:
+    while j >= 0 and arr[j] > key:
         arr[j + 1] = arr[j]
         j -= 1
     arr[j + 1] = key
@@ -1417,9 +1419,13 @@ const bubbleSort = {
 n = len(arr)
 
 for i in range(n - 1):
+    did_swap = False
     for j in range(n - i - 1):
         if arr[j] > arr[j + 1]:
             arr[j], arr[j + 1] = arr[j + 1], arr[j]
+            did_swap = True
+    if not did_swap:
+        break
 
 print(f"Sorted array: {arr}.")
 `,
@@ -1592,7 +1598,7 @@ const mergeAndQuickSort = {
       items: [
         "If the list has 0 or 1 item, it is already sorted: stop.",
         "Choose one item as the PIVOT (we use the last item).",
-        "Put every item smaller than the pivot on its left, and every bigger item on its right. The pivot is now in its final place.",
+        "Put every other item that is smaller than or equal to the pivot on its left, and every bigger item on its right. (Items equal to the pivot go left, so none is lost when the list has duplicates.) The pivot is now in its final place.",
         "Sort the left part by using the same method again.",
         "Sort the right part by using the same method again.",
       ],
@@ -1608,8 +1614,8 @@ const mergeAndQuickSort = {
   if the list has 0 or 1 item:
     return the list
   choose the last item as the PIVOT
-  make a LEFT part with the items smaller than the pivot
-  make a RIGHT part with the items bigger than the pivot
+  make a LEFT part with the other items that are smaller than or equal to the pivot
+  make a RIGHT part with the other items that are bigger than the pivot
   QUICK SORT the LEFT part
   QUICK SORT the RIGHT part
   the result is: LEFT part, then the pivot, then RIGHT part`,

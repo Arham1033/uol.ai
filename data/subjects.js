@@ -1,6 +1,8 @@
 import { notePages } from "@/data/notePages";
 import { bbaChapters } from "@/data/notes/semester-2/bba";
 import { calculusChapters } from "@/data/notes/semester-2/calculus";
+import { programmingFundamentalsChapters } from "@/data/notes/semester-2/programming-fundamentals";
+import { englishChapters } from "@/data/notes/semester-2/english";
 import { dataStructureChapters } from "@/data/notes/semester-3/data-structure";
 import { multivariableCalculusChapters } from "@/data/notes/semester-3/multivariable-calculus";
 import { coalUnits } from "@/data/notes/semester-3/coal";
@@ -323,94 +325,46 @@ print("Sum of 1 to 5 is", total)`,
   //  SEMESTER 2
   // ==========================================================================
   {
-    slug: "object-oriented-programming",
+    slug: "english",
     semester: 2,
-    code: "SAMPLE-201",
-    name: "Object-Oriented Programming",
-    instructors: ["Sample Instructor B"],
+    name: "English",
+    instructors: [],
     description:
-      "Sample subject: designing programs with classes, objects, inheritance and polymorphism.",
-    totalChapters: 6,
-    topics: ["Classes", "Objects", "Inheritance", "Polymorphism"],
-    status: "in-progress",
-    contributor: "Sample contributor (replace with your name)",
-    updatedAt: "2026-10-11",
-    isSample: true,
-    chapters: [
-      {
-        title: "Classes and Objects",
-        summary: "Bundling data and behaviour together.",
-        theory: [
-          { type: "heading", text: "Why classes?" },
-          {
-            type: "paragraph",
-            text: "A class is a blueprint that groups related data (attributes) and actions (methods). An object is one concrete instance created from that blueprint.",
-          },
-          {
-            type: "code",
-            language: "python",
-            code: `class Student:
-    def __init__(self, name, roll_no):
-        self.name = name
-        self.roll_no = roll_no
-
-    def introduce(self):
-        return f"{self.name} (roll no. {self.roll_no})"
-
-
-student = Student("Sample Student", 1)
-print(student.introduce())`,
-          },
-          {
-            type: "callout",
-            variant: "note",
-            title: "Terminology",
-            text: "__init__ is the constructor: it runs automatically when a new object is created.",
-          },
-        ],
-        pages: notePages(
-          "semester-2/object-oriented-programming",
-          ["page-01.webp", "page-02.webp"],
-          "Object-Oriented Programming handwritten notes, classes and objects",
-        ),
-      },
+      "Expository and technical writing, clarity and conciseness, document design, research proposals, planning and delivering oral presentations, visual aids, non-verbal communication and interview skills, with before and after examples, sample answers and figures.",
+    totalChapters: 8,
+    topics: [
+      "Chapter 1: Expository writing",
+      "Chapter 2: Technical writing",
+      "Chapter 3: Clarity and conciseness",
+      "Chapter 4: Document design, audience recognition and accuracy",
+      "Chapter 5: Research and the research proposal",
+      "Chapter 6: Oral presentation, planning and delivery methods",
+      "Chapter 7: Visual aids and non-verbal communication",
+      "Chapter 8: Interview skills",
     ],
+    status: "available",
+    updatedAt: "2026-11-15",
+    chapters: englishChapters,
   },
+
   {
-    slug: "discrete-structures",
+    slug: "programming-fundamentals",
     semester: 2,
-    code: "SAMPLE-202",
-    name: "Discrete Structures",
+    name: "Programming Fundamentals",
     instructors: [],
     description:
-      "Sample subject: logic, sets, relations and counting techniques used in computer science.",
-    topics: ["Logic", "Sets", "Relations", "Counting"],
-    status: "coming-soon",
-    isSample: true,
-  },
-  {
-    slug: "linear-algebra",
-    semester: 2,
-    code: "SAMPLE-203",
-    name: "Linear Algebra",
-    instructors: [],
-    description:
-      "Sample subject: vectors, matrices and linear transformations.",
-    topics: ["Vectors", "Matrices", "Determinants", "Eigenvalues"],
-    status: "coming-soon",
-    isSample: true,
-  },
-  {
-    slug: "communication-skills",
-    semester: 2,
-    code: "SAMPLE-204",
-    name: "Communication Skills",
-    instructors: [],
-    description:
-      "Sample subject: academic writing, presentations and professional communication.",
-    topics: ["Report writing", "Presentations", "Email etiquette"],
-    status: "coming-soon",
-    isSample: true,
+      "Python functions, scope, recursion and lambda, then the basics of object-oriented programming: classes and objects, constructors, encapsulation and data hiding, with programs and their output.",
+    totalChapters: 5,
+    topics: [
+      "Chapter 1: Functions in Python",
+      "Chapter 2: Scope, nested functions, recursion and lambda",
+      "Chapter 3: Introduction to object-oriented programming",
+      "Chapter 4: Classes and objects",
+      "Chapter 5: Encapsulation and data hiding",
+    ],
+    status: "available",
+    updatedAt: "2026-11-13",
+    chapters: programmingFundamentalsChapters,
   },
 
   {

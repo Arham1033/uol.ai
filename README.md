@@ -214,6 +214,14 @@ Note: GitHub rejects single files over 100 MB, and large image folders slow depl
 
 Search: `HomeSearch` (homepage) and `SubjectBrowser` (semester pages) are the only interactive Client Components besides the navbar and the notes reader. They receive small summaries of the real data from the server page and filter them in the browser. Everything else renders on the server.
 
+### English, semester 2
+
+`data/notes/semester-2/english.js` holds eight chapters: expository writing, technical writing, clarity and conciseness, document design with audience recognition and accuracy, research and the research proposal, oral presentation planning and delivery, visual aids with non-verbal communication, and interview skills. Helpers at the top of the file: `BOX(title, blocks)` for a scrolling box, `BA(rows)` for a wordy and concise comparison table, and `SCEN(title, [[question, answer]])` for a scrolling box of questions with answers. Four figures are in `public/notes/semester-2/english/`. The instructor name is left empty.
+
+### Programming Fundamentals, semester 2
+
+`data/notes/semester-2/programming-fundamentals.js` holds five chapters: functions, scope with recursion and lambda, introduction to object-oriented programming, classes and objects, and encapsulation with data hiding. Programs are written with `PY(code)` and their printed text with `OUT(text)`. Long program sets sit in scrolling boxes made with `EX(title, items)`. Four figures are in `public/notes/semester-2/programming-fundamentals/`. The instructor name is left empty. Semester 2 now lists only real subjects (English, Programming Fundamentals, Calculus and BBA); the earlier sample subjects for that semester were removed.
+
 ### Calculus, semester 2
 
 `data/notes/semester-2/calculus.js` holds eight chapters in teaching order: the derivative, rules of differentiation, exponential and logarithmic derivatives, trigonometric and inverse trigonometric derivatives, maxima and minima, integration, methods of integration and the definite integral. Long example sets sit in scrolling boxes, unsolved questions are solved, and ten figures are in `public/notes/semester-2/calculus/`. The instructor name is left empty.

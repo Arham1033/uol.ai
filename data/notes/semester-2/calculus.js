@@ -112,7 +112,7 @@ const chapter1 = {
           lines: ["f'(x) = lim (h -> 0) -1 / [ (x + h - 1)(x - 1) ] = -1 / (x - 1)^{2}"],
         },
         {
-          text: "Example 3 (sqrt = square root): find the derivative of y = sqrt(x). Step 1: f(x) = sqrt(x) and f(x + h) = sqrt(x + h).",
+          text: "Example 3: find the derivative of y = sqrt(x). Step 1: f(x) = sqrt(x) and f(x + h) = sqrt(x + h).",
           lines: ["[f(x + h) - f(x)] / h = [ sqrt(x + h) - sqrt(x) ] / h"],
         },
         {

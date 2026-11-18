@@ -16,7 +16,7 @@ export const semesters = [
     number: 2,
     focus: "Building the basics",
     description:
-      "Object-oriented thinking and the core mathematics used throughout computing.",
+      "Programming fundamentals in Python, calculus and an introduction to business administration.",
   },
   {
     number: 3,
